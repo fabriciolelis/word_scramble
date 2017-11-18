@@ -3,8 +3,8 @@ package word_scramble;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		WordsBank wb = new WordsBank();
+		System.out.println(wb.getWord());
 	}
 
 }
