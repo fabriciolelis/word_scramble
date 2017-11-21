@@ -1,4 +1,4 @@
-package word_scramble;
+package game_mechanics;
 
 public interface GameMechanics {
 
