@@ -16,10 +16,10 @@ public class FactoryShuffler {
 		int shuffleNumber = randomShuffles();
 		switch (shuffleNumber) {
 		case 1:
-			return shuffler = new AleatoryShuffler();
+			return shuffler = new ReverseShuffler();
 
 		default:
-			return shuffler = new AleatoryShuffler();
+			return shuffler = new ReverseShuffler();
 		}
 		
 	}
