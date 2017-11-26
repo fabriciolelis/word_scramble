@@ -9,7 +9,7 @@ public class Principal {
 	private static Scanner in = new Scanner(System.in);
 	private static GameMechanics gm;
 
-	private static String getDigitedWords() {
+	private static String getTypedWords() {
 		System.out.println("Type the word:");
 		return in.nextLine();
 	}
@@ -28,7 +28,7 @@ public class Principal {
 		String scrambledWord = chooseGameMode();
 		while (gm.continueGame()) {
 			System.out.println(scrambledWord);
-			String typedWord = getDigitedWords();
+			String typedWord = getTypedWords();
 			System.out.println(gm.compareWords(typedWord));
 		}
 		in.close();
