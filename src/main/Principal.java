@@ -25,10 +25,12 @@ public class Principal {
 	}
 	
 	public static void main(String[] args) {
-        String scrambledWord = chooseGameMode();
-        System.out.println(scrambledWord);
-        String digitedWord = getDigitedWords();
-        System.out.println(gm.compareWords(digitedWord));
+		String scrambledWord = chooseGameMode();
+		while (gm.continueGame()) {
+			System.out.println(scrambledWord);
+			String typedWord = getDigitedWords();
+			System.out.println(gm.compareWords(typedWord));
+		}
 		in.close();
 	}
 }

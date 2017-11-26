@@ -7,24 +7,32 @@ public class GameModeOne implements GameMechanics {
 	private Shuffler shuffler;
 	private String shuffledWord;
 	private String hiddenWord;
+	private int totalWords;
 	private int attempts;
 
 	public GameModeOne() {
 		FactoryShuffler fs = new FactoryShuffler();
 		shuffler = fs.chooseShuffler();
 		attempts = 0;
+		totalWords = 1;
 	}
 	
 	@Override
 	public String getScrambledWord() {
 		shuffledWord = shuffler.getScrambledWord();
-		return shuffledWord;
+		return shuffledWord.toUpperCase();
 	}
 
 	@Override
-	public boolean compareWords(String digitedWord) {
+	public boolean compareWords(String typedWord) {
 		attempts+= 1;
-		return shuffler.getHiddenWord().equals(digitedWord);
+		return shuffler.getHiddenWord().toUpperCase().equals(typedWord.toUpperCase());
+	}
+
+	@Override
+	public boolean continueGame() {
+		totalWords+= totalWords;
+		return totalWords < 9;
 	}
 
 	@Override

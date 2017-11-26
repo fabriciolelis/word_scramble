@@ -18,4 +18,9 @@ public class GameModeTwo implements GameMechanics {
 		return false;
 	}
 
+	@Override
+	public boolean continueGame() {
+		return false;
+	}
+
 }
