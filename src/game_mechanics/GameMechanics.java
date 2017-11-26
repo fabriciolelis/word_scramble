@@ -2,6 +2,9 @@ package game_mechanics;
 
 public interface GameMechanics {
 	
-	public boolean hitWord();
-
+	String getScrambledWord();
+	
+	String getHiddenWord();
+	
+	boolean compareWords(String digitedWord);
 }

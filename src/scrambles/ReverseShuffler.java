@@ -4,13 +4,13 @@ import util.WordsBank;
 
 public class ReverseShuffler implements Shuffler {
 	private WordsBank wb;
-	private String normalWord;
+	private String hiddenWord;
 	private String reverseWord;
 	
 	public ReverseShuffler() {
 		wb = new WordsBank();
-		this.normalWord = wb.getWord();
-		this.reverseWord =  this.shufflerWord(normalWord);
+		this.hiddenWord = wb.getWord();
+		this.reverseWord =  this.shufflerWord(hiddenWord);
 	}
 
 	@Override
@@ -21,5 +21,17 @@ public class ReverseShuffler implements Shuffler {
 		}
 		return reverse;
 	}
+
+	@Override
+	public String getScrambledWord() {
+		return reverseWord;
+	}
+
+	@Override
+	public String getHiddenWord() {
+		return hiddenWord;
+	}
+	
+	
 
 }
