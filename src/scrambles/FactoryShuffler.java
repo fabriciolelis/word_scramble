@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class FactoryShuffler {
 	private static final int shuffles = 1;
-	public Shuffler shuffler;
+	private Shuffler shuffler;
 	
 	private int randomShuffles() {
 		Random rand = new Random();
@@ -12,16 +12,18 @@ public class FactoryShuffler {
 		return randomValue;
 	}
 	
-	public Shuffler getShuffle() {
+	public Shuffler chooseShuffler() {
 		int shuffleNumber = randomShuffles();
 		switch (shuffleNumber) {
 		case 1:
-			return shuffler = new AleatoryShuffler();
+			return shuffler = new ReverseShuffler();
 
 		default:
-			return shuffler = new AleatoryShuffler();
+			return shuffler = new ReverseShuffler();
 		}
 		
 	}
+	
+	
 
 }
