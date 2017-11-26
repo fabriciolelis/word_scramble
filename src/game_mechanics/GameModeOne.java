@@ -19,14 +19,15 @@ public class GameModeOne implements GameMechanics {
 	
 	@Override
 	public String getScrambledWord() {
-		shuffledWord = shuffler.getScrambledWord();
+		this.hiddenWord = shuffler.getWordOnBank();
+		shuffledWord = shuffler.shufflerWord(this.hiddenWord);
 		return shuffledWord.toUpperCase();
 	}
 
 	@Override
 	public boolean compareWords(String typedWord) {
 		attempts+= 1;
-		return shuffler.getHiddenWord().toUpperCase().equals(typedWord.toUpperCase());
+		return this.hiddenWord.toUpperCase().equals(typedWord.toUpperCase());
 	}
 
 	@Override
@@ -40,5 +41,4 @@ public class GameModeOne implements GameMechanics {
 		hiddenWord = shuffler.getHiddenWord();
 		return hiddenWord;
 	}
-
 }
