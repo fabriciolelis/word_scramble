@@ -4,8 +4,7 @@ import java.util.Random;
 
 public class FactoryShuffler {
 	private static final int shuffles = 1;
-	private Shuffler shuffler;
-	
+
 	private int randomShuffles() {
 		Random rand = new Random();
 		int randomValue = rand.nextInt(shuffles);
@@ -16,10 +15,10 @@ public class FactoryShuffler {
 		int shuffleNumber = randomShuffles();
 		switch (shuffleNumber) {
 		case 1:
-			return shuffler = new ReverseShuffler();
+			return new ReverseShuffler();
 
 		default:
-			return shuffler = new ReverseShuffler();
+			return new ReverseShuffler();
 		}
 		
 	}

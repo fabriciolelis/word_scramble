@@ -14,8 +14,18 @@ public class GameModeTwo implements GameMechanics {
 	}
 
 	@Override
-	public boolean compareWords(String digitedWord) {
+	public String compareWords(String digitedWord) {
+		return null;
+	}
+
+	@Override
+	public boolean continueGame() {
 		return false;
+	}
+
+	@Override
+	public String printScore() {
+		return null;
 	}
 
 }

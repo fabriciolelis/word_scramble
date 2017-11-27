@@ -3,8 +3,8 @@ package game_mechanics;
 public interface GameMechanics {
 	
 	String getScrambledWord();
-	
 	String getHiddenWord();
-	
-	boolean compareWords(String digitedWord);
+	String compareWords(String typedWord);
+  boolean continueGame();
+  String printScore();
 }
