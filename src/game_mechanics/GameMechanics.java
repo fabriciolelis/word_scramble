@@ -4,6 +4,7 @@ public interface GameMechanics {
 	
 	String getScrambledWord();
 	String getHiddenWord();
-	boolean compareWords(String typedWord);
-    boolean continueGame();
+	String compareWords(String typedWord);
+  boolean continueGame();
+  String printScore();
 }
