@@ -1,5 +1,6 @@
 package game_mechanics;
 
+import constants.StringConstants;
 import scrambles.FactoryShuffler;
 import scrambles.Shuffler;
 
@@ -20,22 +21,32 @@ public class GameModeTwo implements GameMechanics {
 
 	@Override
 	public String getScrambledWord() {
-		// TODO Auto-generated method stub
-		return null;
+		this.hiddenWord = shuffler.getWordOnBank();
+		return shuffler.shufflerWord(this.hiddenWord).toUpperCase();
 	}
 
 	@Override
 	public String compareWords(String typedWord) {
-		return null;
+    String response;
+		if(this.hiddenWord.toUpperCase().equals(typedWord.toUpperCase())) {
+		  this.hits+=1;
+      response = StringConstants.HIT_WORD;
+    }
+    else {
+		  this.attempts+=1;
+		  this.mistakes+=1;
+      response = StringConstants.MISSED_WORD;
+    }
+	  return response;
 	}
 
 	@Override
 	public boolean continueGame() {
-		return false;
+	  return this.attempts <= 5;
 	}
 
 	@Override
 	public String printScore() {
-		return null;
+		return String.format(StringConstants.GAME_SCORE, this.hits, this.mistakes);
 	}
 }
