@@ -14,13 +14,10 @@ public class FactoryShuffler {
 		int shuffleNumber = randomShuffles();
 		switch (shuffleNumber) {
 		case 1:
-		  System.out.println("reverse shuffler");
 			return new ReverseShuffler();
     case 2:
-      System.out.println("aleatory shuffler");
       return new AleatoryShuffler();
 		default:
-      System.out.println("default case");
 			return new ReverseShuffler();
 		}
 	}
