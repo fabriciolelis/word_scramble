@@ -6,7 +6,7 @@ public class ReverseShuffler implements Shuffler {
 	private WordsBank wb;
 	private String hiddenWord;
 
-	public ReverseShuffler() {
+	ReverseShuffler() {
 		wb = new WordsBank();
 	}
 

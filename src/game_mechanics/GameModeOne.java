@@ -49,10 +49,4 @@ public class GameModeOne implements GameMechanics {
   public String printScore() {
     return String.format(StringConstants.GAME_SCORE, this.hits, this.mistakes);
   }
-
-  @Override
-	public String getHiddenWord() {
-		hiddenWord = shuffler.getHiddenWord();
-		return hiddenWord;
-	}
 }
