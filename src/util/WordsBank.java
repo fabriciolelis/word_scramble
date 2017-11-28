@@ -19,13 +19,12 @@ public class WordsBank {
 			while((line = br.readLine()) != null) {
 				words.add(line);
 			}
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		rand = new Random();
 	}
-	
+
 	public String getWord() {
 		return words.get(rand.nextInt(words.size()));
 	}

@@ -9,12 +9,7 @@ public class GameModeTwo implements GameMechanics {
 	}
 
 	@Override
-	public String getHiddenWord() {
-		return null;
-	}
-
-	@Override
-	public String compareWords(String digitedWord) {
+	public String compareWords(String typedWord) {
 		return null;
 	}
 
@@ -27,5 +22,4 @@ public class GameModeTwo implements GameMechanics {
 	public String printScore() {
 		return null;
 	}
-
 }
