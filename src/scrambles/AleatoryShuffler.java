@@ -6,7 +6,6 @@ import util.WordsBank;
 
 public class AleatoryShuffler implements Shuffler {
   private WordsBank wb;
-  private String hiddenWord;
 
   AleatoryShuffler(){
     wb = new WordsBank();
@@ -27,13 +26,7 @@ public class AleatoryShuffler implements Shuffler {
   }
 
   @Override
-  public String getHiddenWord() {
-    return this.hiddenWord;
-  }
-
-  @Override
   public String getWordOnBank() {
-    this.hiddenWord = wb.getWord();
-    return this.hiddenWord;
+    return wb.getWord();
   }
 }

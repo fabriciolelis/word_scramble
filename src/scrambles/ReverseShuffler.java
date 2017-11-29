@@ -4,7 +4,6 @@ import util.WordsBank;
 
 public class ReverseShuffler implements Shuffler {
 	private WordsBank wb;
-	private String hiddenWord;
 
 	ReverseShuffler() {
 		wb = new WordsBank();
@@ -20,13 +19,7 @@ public class ReverseShuffler implements Shuffler {
 	}
 
 	@Override
-	public String getHiddenWord() {
-		return hiddenWord;
-	}
-
-	@Override
 	public String getWordOnBank() {
-		this.hiddenWord = wb.getWord();
-		return this.hiddenWord;
+		return wb.getWord();
 	}
 }
