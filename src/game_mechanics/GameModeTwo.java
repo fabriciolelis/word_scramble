@@ -10,6 +10,7 @@ public class GameModeTwo implements GameMechanics {
   private int hits;
   private int mistakes;
   private int attempts;
+  private int totalWords;
 
 	GameModeTwo(){
     FactoryShuffler fs = new FactoryShuffler();
@@ -17,6 +18,7 @@ public class GameModeTwo implements GameMechanics {
     this.hits = 0;
     this.mistakes = 0;
     this.attempts = 0;
+    this.totalWords = 0;
   }
 
 	@Override
@@ -42,7 +44,7 @@ public class GameModeTwo implements GameMechanics {
 
 	@Override
 	public boolean continueGame() {
-	  return this.attempts <= 5;
+	  return this.attempts <= 5 || this.totalWords <= 10;
 	}
 
 	@Override

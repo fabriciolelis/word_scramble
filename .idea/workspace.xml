@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359b1200-9ea5-4468-bd45-d9d347b9f072" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game_mechanics/GameModeOne.java" afterPath="$PROJECT_DIR$/src/game_mechanics/GameModeOne.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game_mechanics/GameModeTwo.java" afterPath="$PROJECT_DIR$/src/game_mechanics/GameModeTwo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scrambles/AleatoryShuffler.java" afterPath="$PROJECT_DIR$/src/scrambles/AleatoryShuffler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scrambles/ReverseShuffler.java" afterPath="$PROJECT_DIR$/src/scrambles/ReverseShuffler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scrambles/Shuffler.java" afterPath="$PROJECT_DIR$/src/scrambles/Shuffler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,22 +20,32 @@
       <file leaf-file-name="GameModeOne.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game_mechanics/GameModeOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="45" />
+            <state relative-caret-position="348">
+              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameModeTwo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameModeTwo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game_mechanics/GameModeTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="928">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="1015">
+              <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
+                <element signature="e#1074#1075#0" expanded="true" />
+                <element signature="e#1132#1133#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,6 +60,26 @@
                 <element signature="e#671#672#0" expanded="true" />
                 <element signature="e#700#701#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Principal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Principal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameMechanics.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game_mechanics/GameMechanics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,19 +104,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Principal.java" />
         <option value="$PROJECT_DIR$/src/constants/StringConstants.java" />
         <option value="$PROJECT_DIR$/src/util/WordsBank.java" />
         <option value="$PROJECT_DIR$/src/complements/words_bank.txt" />
-        <option value="$PROJECT_DIR$/src/game_mechanics/GameModeOne.java" />
         <option value="$PROJECT_DIR$/src/game_mechanics/FactoryGameMechanics.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/game_mechanics/GameMechanics.java" />
         <option value="$PROJECT_DIR$/src/scrambles/FactoryShuffler.java" />
         <option value="$PROJECT_DIR$/src/scrambles/Shuffler.java" />
         <option value="$PROJECT_DIR$/src/scrambles/AleatoryShuffler.java" />
         <option value="$PROJECT_DIR$/src/scrambles/ReverseShuffler.java" />
+        <option value="$PROJECT_DIR$/src/main/Principal.java" />
+        <option value="$PROJECT_DIR$/src/game_mechanics/GameMechanics.java" />
+        <option value="$PROJECT_DIR$/src/game_mechanics/GameModeOne.java" />
         <option value="$PROJECT_DIR$/src/game_mechanics/GameModeTwo.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -159,12 +188,6 @@
               <item name="word_scramble" type="b2602c69:ProjectViewProjectNode" />
               <item name="word_scramble" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="complements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word_scramble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word_scramble" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game_mechanics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -178,12 +201,6 @@
               <item name="word_scramble" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scrambles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="word_scramble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="word_scramble" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -337,12 +354,12 @@
       <workItem from="1511793388922" duration="2918000" />
       <workItem from="1511804892346" duration="7773000" />
       <workItem from="1511826464395" duration="5238000" />
-      <workItem from="1511879607983" duration="6812000" />
+      <workItem from="1511879607983" duration="8783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26315000" />
+    <option name="totallyTimeSpent" value="28286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1910" y="0" width="1940" height="2110" extended-state="0" />
@@ -590,22 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Principal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_mechanics/GameMechanics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scrambles/FactoryShuffler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -653,30 +654,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_mechanics/GameModeOne.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Principal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="45" />
+        <state relative-caret-position="348">
+          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/game_mechanics/GameMechanics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="261">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game_mechanics/GameModeOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game_mechanics/GameModeTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="1015">
+          <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

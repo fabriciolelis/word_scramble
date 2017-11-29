@@ -14,7 +14,7 @@ public class GameModeOne implements GameMechanics {
 	GameModeOne() {
 		FactoryShuffler fs = new FactoryShuffler();
 		shuffler = fs.chooseShuffler();
-		totalWords = 1;
+		totalWords = 0;
 		hits = 0;
 		mistakes = 0;
 	}
