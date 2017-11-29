@@ -30,7 +30,12 @@ public class Principal {
 			String scrambledWord = gm.getScrambledWord();
 			System.out.println(scrambledWord);
 			String typedWord = getTypedWords();
-			System.out.println(gm.compareWords(typedWord));
+			while (!gm.areEquals(typedWord) && gm.canTryAgain()){
+        System.out.println(StringConstants.MISSED_WORD);
+        System.out.println(scrambledWord);
+        typedWord = getTypedWords();
+      }
+      System.out.println(StringConstants.HIT_WORD);
 		}
     System.out.println(gm.printScore());
 		in.close();

@@ -9,7 +9,7 @@ public class GameModeTwo implements GameMechanics {
 	private String hiddenWord;
   private int hits;
   private int mistakes;
-  private int attempts;
+  private int attemptsTotal;
   private int totalWords;
 
 	GameModeTwo(){
@@ -17,7 +17,7 @@ public class GameModeTwo implements GameMechanics {
     this.shuffler = fs.chooseShuffler();
     this.hits = 0;
     this.mistakes = 0;
-    this.attempts = 0;
+    this.attemptsTotal = 0;
     this.totalWords = 0;
   }
 
@@ -36,7 +36,7 @@ public class GameModeTwo implements GameMechanics {
       response = StringConstants.HIT_WORD;
     }
     else {
-		  this.attempts+=1;
+		  this.attemptsTotal +=1;
 		  this.mistakes+=1;
       response = StringConstants.MISSED_WORD;
     }
@@ -45,7 +45,17 @@ public class GameModeTwo implements GameMechanics {
 
 	@Override
 	public boolean continueGame() {
-	  return (this.attempts < 5 && this.totalWords < 10);
+	  return (this.attemptsTotal < 5 && this.totalWords < 10);
+	}
+
+	@Override
+	public boolean canTryAgain() {
+		return false;
+	}
+
+	@Override
+	public boolean areEquals(String typedWord) {
+		return false;
 	}
 
 	@Override

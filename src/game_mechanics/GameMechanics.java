@@ -6,4 +6,7 @@ public interface GameMechanics {
 	String compareWords(String typedWord);
   String printScore();
   boolean continueGame();
+
+  boolean canTryAgain();
+  boolean areEquals(String typedWord);
 }
