@@ -23,6 +23,7 @@ public class GameModeTwo implements GameMechanics {
 
 	@Override
 	public String getScrambledWord() {
+	  this.totalWords+= 1;
 		this.hiddenWord = shuffler.getWordOnBank();
 		return shuffler.shufflerWord(this.hiddenWord).toUpperCase();
 	}
@@ -44,7 +45,7 @@ public class GameModeTwo implements GameMechanics {
 
 	@Override
 	public boolean continueGame() {
-	  return this.attempts <= 5 || this.totalWords <= 10;
+	  return (this.attempts < 5 && this.totalWords < 10);
 	}
 
 	@Override

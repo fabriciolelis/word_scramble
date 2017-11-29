@@ -42,7 +42,7 @@ public class GameModeOne implements GameMechanics {
 
 	@Override
 	public boolean continueGame() {
-		return totalWords <= 9;
+		return totalWords < 10;
 	}
 
   @Override
