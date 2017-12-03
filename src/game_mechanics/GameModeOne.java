@@ -31,19 +31,6 @@ public class GameModeOne implements GameMechanics {
 	}
 
 	@Override
-	public String compareWords(String typedWord) {
-	  String response;
-	  if (this.hiddenWord.toUpperCase().equals(typedWord.toUpperCase())) {
-	    this.hits += 1;
-	    response = StringConstants.HIT_WORD;
-    } else {
-      response = StringConstants.MISSED_WORD;
-	    this.mistakes += 1;
-    }
-		return response;
-	}
-
-	@Override
 	public boolean areEquals(String typedWord){
 	  if (this.hiddenWord.toUpperCase().equals(typedWord.toUpperCase())){
 	    this.hits+= 1;

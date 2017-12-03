@@ -1,5 +1,6 @@
 package game_mechanics;
 
+import constants.NumericalConstants;
 import constants.StringConstants;
 import scrambles.FactoryShuffler;
 import scrambles.Shuffler;
@@ -11,6 +12,7 @@ public class GameModeTwo implements GameMechanics {
   private int mistakes;
   private int attemptsTotal;
   private int totalWords;
+  private int attemptsPerWord;
 
 	GameModeTwo(){
     FactoryShuffler fs = new FactoryShuffler();
@@ -19,6 +21,7 @@ public class GameModeTwo implements GameMechanics {
     this.mistakes = 0;
     this.attemptsTotal = 0;
     this.totalWords = 0;
+    this.attemptsPerWord = 0;
   }
 
 	@Override
@@ -29,33 +32,28 @@ public class GameModeTwo implements GameMechanics {
 	}
 
 	@Override
-	public String compareWords(String typedWord) {
-    String response;
-		if(this.hiddenWord.toUpperCase().equals(typedWord.toUpperCase())) {
-		  this.hits+=1;
-      response = StringConstants.HIT_WORD;
-    }
-    else {
-		  this.attemptsTotal +=1;
-		  this.mistakes+=1;
-      response = StringConstants.MISSED_WORD;
-    }
-	  return response;
-	}
-
-	@Override
 	public boolean continueGame() {
 	  return (this.attemptsTotal < 5 && this.totalWords < 10);
 	}
 
 	@Override
 	public boolean canTryAgain() {
-		return false;
+
+	  return this.attemptsPerWord < NumericalConstants.ATTEMPTS_PER_WORD;
 	}
 
 	@Override
 	public boolean areEquals(String typedWord) {
-		return false;
+		if (this.hiddenWord.toUpperCase().equals(typedWord.toUpperCase())) {
+		  this.hits+= 1;
+		  this.attemptsPerWord = 0;
+		  return true;
+    } else {
+      this.attemptsTotal+= 1;
+		  this.mistakes+= 1;
+		  this.attemptsPerWord+= 1;
+      return false;
+    }
 	}
 
 	@Override
