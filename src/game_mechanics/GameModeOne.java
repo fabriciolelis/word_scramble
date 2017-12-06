@@ -25,6 +25,7 @@ public class GameModeOne implements GameMechanics {
 	@Override
 	public String getScrambledWord() {
 		this.totalWords+= 1;
+		this.attemptsPerWord = 0;
 		this.hiddenWord = this.shuffler.getWordOnBank();
     String shuffledWord = this.shuffler.shufflerWord(this.hiddenWord);
 		return shuffledWord.toUpperCase();
@@ -34,23 +35,27 @@ public class GameModeOne implements GameMechanics {
 	public boolean areEquals(String typedWord){
 	  if (this.hiddenWord.toUpperCase().equals(typedWord.toUpperCase())){
 	    this.hits+= 1;
-	    this.attemptsPerWord = 0;
 	    return true;
     } else {
       this.mistakes+= 1;
-      this.attemptsPerWord+= 1;
       return false;
     }
   }
 
 	@Override
 	public boolean continueGame() {
-		return this.totalWords < NumericalConstants.TOTAL_WORDS_PER_GAME;
+	  return this.totalWords < NumericalConstants.TOTAL_WORDS_PER_GAME;
 	}
 
 	@Override
 	public boolean canTryAgain() {
-		return this.attemptsPerWord < NumericalConstants.ATTEMPTS_PER_WORD;
+	  if (this.attemptsPerWord < NumericalConstants.ATTEMPTS_PER_WORD - 1) {
+	    this.attemptsPerWord+= 1;
+	    return true;
+    } else {
+	    this.attemptsPerWord= 0;
+	    return false;
+    }
 	}
 
 	@Override

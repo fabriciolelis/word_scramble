@@ -27,13 +27,14 @@ public class GameModeTwo implements GameMechanics {
 	@Override
 	public String getScrambledWord() {
 	  this.totalWords+= 1;
+	  this.attemptsPerWord = 0;
 		this.hiddenWord = shuffler.getWordOnBank();
 		return shuffler.shufflerWord(this.hiddenWord).toUpperCase();
 	}
 
 	@Override
 	public boolean continueGame() {
-	  return (this.attemptsTotal < 5 && this.totalWords < 10);
+	  return (this.attemptsTotal < NumericalConstants.ATTEMPTS_TOTAL_GAME_MODE_TWO && this.totalWords < NumericalConstants.TOTAL_WORDS_PER_GAME_MODE_TWO);
 	}
 
 	@Override
@@ -46,12 +47,10 @@ public class GameModeTwo implements GameMechanics {
 	public boolean areEquals(String typedWord) {
 		if (this.hiddenWord.toUpperCase().equals(typedWord.toUpperCase())) {
 		  this.hits+= 1;
-		  this.attemptsPerWord = 0;
 		  return true;
     } else {
       this.attemptsTotal+= 1;
 		  this.mistakes+= 1;
-		  this.attemptsPerWord+= 1;
       return false;
     }
 	}
