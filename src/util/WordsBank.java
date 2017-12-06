@@ -1,16 +1,20 @@
 package util;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
 public class WordsBank {
 	private List<String> words;
-	private Random rand;
+	private int index;
 
 	public WordsBank() {
+	  index = 0;
 		words = new ArrayList<>();
 		URL url = getClass().getResource("../complements/words_bank.txt");
 		File file = new File(url.getPath());
@@ -22,10 +26,16 @@ public class WordsBank {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		rand = new Random();
+		Collections.shuffle(words);
 	}
 
 	public String getWord() {
-		return words.get(rand.nextInt(words.size()));
+	  String word = words.get(index);
+	  if(index < words.size()){
+      index+= 1;
+    } else {
+	    index = 0;
+    }
+		return word;
 	}
 }
