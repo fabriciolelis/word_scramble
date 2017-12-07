@@ -24,7 +24,7 @@ public class WordsBank {
 				words.add(line);
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+		  e.printStackTrace();
 		}
 		Collections.shuffle(words);
 	}

@@ -37,7 +37,7 @@ public class GameModeOne implements GameMechanics {
 	    this.hits+= 1;
 	    return true;
     } else {
-      this.mistakes+= 1;
+	  	this.mistakes+= 1;
       return false;
     }
   }

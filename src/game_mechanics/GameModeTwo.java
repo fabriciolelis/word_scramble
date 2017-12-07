@@ -39,7 +39,6 @@ public class GameModeTwo implements GameMechanics {
 
 	@Override
 	public boolean canTryAgain() {
-
 	  return this.attemptsPerWord < NumericalConstants.ATTEMPTS_PER_WORD;
 	}
 
