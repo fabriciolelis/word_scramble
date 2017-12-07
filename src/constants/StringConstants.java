@@ -1,6 +1,7 @@
 package constants;
 
 public final class StringConstants {
+
   // GAME MODE
   public static final String HIT_WORD = "You've hit the word";
   public static final String MISSED_WORD = "You've missed the word";
