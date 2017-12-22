@@ -5,16 +5,9 @@ import constants.StringConstants;
 import scrambles.FactoryShuffler;
 import scrambles.Shuffler;
 
-public class GameModeOne implements GameMechanics {
+public class GameModeOne extends GameMode implements GameMechanics {
 
-  private Shuffler shuffler;
-  private String hiddenWord;
-  private int totalWords;
-  private int hits;
-  private int mistakes;
-  private int attemptsPerWord;
-
-  GameModeOne() {
+    GameModeOne() {
     FactoryShuffler fs = new FactoryShuffler();
     this.shuffler = fs.chooseShuffler();
     this.totalWords = 0;
@@ -25,22 +18,12 @@ public class GameModeOne implements GameMechanics {
 
   @Override
   public String getScrambledWord() {
-    this.totalWords += 1;
-    this.attemptsPerWord = 0;
-    this.hiddenWord = this.shuffler.getWordOnBank();
-    String shuffledWord = this.shuffler.shufflerWord(this.hiddenWord);
-    return shuffledWord.toUpperCase();
+    return super.getScrambledWord();
   }
 
   @Override
   public boolean areEquals(String typedWord) {
-    if (this.hiddenWord.toUpperCase().equals(typedWord.toUpperCase())) {
-      this.hits += 1;
-      return true;
-    } else {
-      this.mistakes += 1;
-      return false;
-    }
+    return super.areEquals(typedWord);
   }
 
   @Override
@@ -50,7 +33,7 @@ public class GameModeOne implements GameMechanics {
 
   @Override
   public boolean canTryAgain() {
-    if (this.attemptsPerWord < NumericalConstants.ATTEMPTS_PER_WORD - 1) {
+    if (this.attemptsPerWord < NumericalConstants.ATTEMPTS_PER_WORD_GAME_ONE - 1) {
       this.attemptsPerWord += 1;
       return true;
     } else {
