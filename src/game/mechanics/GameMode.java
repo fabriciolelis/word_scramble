@@ -1,4 +1,4 @@
-package game_mechanics;
+package game.mechanics;
 
 import scrambles.Shuffler;
 

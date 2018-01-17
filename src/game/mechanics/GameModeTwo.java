@@ -1,13 +1,12 @@
-package game_mechanics;
+package game.mechanics;
 
 import constants.NumericalConstants;
 import constants.StringConstants;
 import scrambles.FactoryShuffler;
-import scrambles.Shuffler;
 
-public class GameModeOne extends GameMode implements GameMechanics {
+public class GameModeTwo extends GameMode implements GameMechanics {
 
-    GameModeOne() {
+  GameModeTwo() {
     FactoryShuffler fs = new FactoryShuffler();
     this.shuffler = fs.chooseShuffler();
     this.totalWords = 0;
@@ -28,12 +27,12 @@ public class GameModeOne extends GameMode implements GameMechanics {
 
   @Override
   public boolean continueGame() {
-    return this.totalWords < NumericalConstants.TOTAL_WORDS_PER_GAME;
+    return this.mistakes < NumericalConstants.TOTAL_ERRORS;
   }
 
   @Override
   public boolean canTryAgain() {
-    if (this.attemptsPerWord < NumericalConstants.ATTEMPTS_PER_WORD_GAME_ONE - 1) {
+    if (this.attemptsPerWord < NumericalConstants.ATTEMPTS_PER_WORD_GAME_TWO - 1) {
       this.attemptsPerWord += 1;
       return true;
     } else {

@@ -7,8 +7,8 @@ public final class NumericalConstants {
   public static final int ATTEMPTS_PER_WORD_GAME_ONE = 3;
 
   // GAME MODE TWO
-  public static final int TOTAL_WORDS_PER_GAME_MODE_TWO = 20;
-  public static final int ATTEMPTS_PER_WORD_GAME_TWO = 5;
+  public static final int ATTEMPTS_PER_WORD_GAME_TWO = 1;
+  public static final int TOTAL_ERRORS = 5;
 
   // FACTORY SHUFFLER
   public static final int SHUFFLERS_NUMBER = 3;
