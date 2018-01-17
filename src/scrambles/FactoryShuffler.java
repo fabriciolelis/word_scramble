@@ -5,11 +5,9 @@ import java.util.Random;
 
 public class FactoryShuffler {
 
-  private static final int shuffles = NumericalConstants.SHUFFLERS_NUMBER;
-
   private int randomShuffles() {
     Random rand = new Random();
-    return rand.nextInt(shuffles);
+    return rand.nextInt(NumericalConstants.SHUFFLERS_NUMBER);
   }
 
   public Shuffler chooseShuffler() {

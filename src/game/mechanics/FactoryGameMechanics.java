@@ -1,7 +1,12 @@
-package game_mechanics;
+package game.mechanics;
 
 public class FactoryGameMechanics {
 
+  /**
+   * Choose a game mode randomly.
+   * @param gameMode game mode number.
+   * @return Game Mode
+   */
   public GameMechanics fetchGameMode(int gameMode) {
     switch (gameMode) {
       case 1:

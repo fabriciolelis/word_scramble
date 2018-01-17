@@ -1,10 +1,10 @@
 package main;
 
 import constants.StringConstants;
+import game.mechanics.FactoryGameMechanics;
+import game.mechanics.GameMechanics;
 import java.util.Scanner;
 
-import game_mechanics.FactoryGameMechanics;
-import game_mechanics.GameMechanics;
 
 public class Principal {
 
